@@ -1,19 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <title>任天堂遊戲分析</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background-color: #f7f7f7;
+            margin: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e60012; /* Nintendo red */
+            margin-bottom: 40px;
+        }
+
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 60px;
+            background: white;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        iframe {
+            border: none;
+            border-radius: 12px;
+        }
+
+        .analysis {
+            max-width: 300px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .analysis h3 {
+            color: #e60012;
+            margin-bottom: 10px;
+        }
+
+    </style>
 </head>
 <body>
 
-    <h1>圖表一</h1>
+    <h1>🎮 任天堂遊戲數據分析</h1>
 
-    <iframe
-        src="top_10_games_chart.html"
-        width="800"
-        height="600"
-        frameborder="0">
-    </iframe>
+    <!-- 圖表一 -->
+    <div class="chart-container">
+        <iframe
+            src="top_10_games_chart.html"
+            width="600"
+            height="400">
+        </iframe>
+
+        <div class="analysis">
+            <h3>圖表一分析</h3>
+            <p>
+                在此區塊中，你可以描述銷售量最高的遊戲趨勢，例如：
+                哪些系列最受歡迎、是否有長青作品、不同年代的差異等。
+            </p>
+        </div>
+    </div>
+
+    <!-- 圖表二 -->
+    <div class="chart-container">
+        <iframe
+            src="second_chart.html"
+            width="600"
+            height="400">
+        </iframe>
+
+        <div class="analysis">
+            <h3>圖表二分析</h3>
+            <p>
+                在這裡可以補充第二張圖表的觀察，例如：
+                類型分布、年度變化或玩家偏好等洞察。
+            </p>
+        </div>
+    </div>
 
 </body>
 </html>
